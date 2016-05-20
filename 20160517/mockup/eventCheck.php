@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>...</title>
+</head>
+<body>
+
+<h1>イベントの確認</h1>
+	<div>
+    	<p>イベント名：</p>
+        <p>時間：</p>
+        <p>場所：</p>        
+        <p>メモ：</p> 
+
+<h1>出欠表</h1>
+<table border="1">
+<tr>
+	<th>日程</th>
+	<td>○</td>
+	<td>△</td>
+	<td>×</td>	
+</tr>
+<tr>
+	<th>04/26 19:00</th>
+	<td>1人</td>
+	<td>0人</td>
+	<td>1人</td>	
+</tr>
+
+	<tr>
+		<th>コメント</th>
+		<th>hhehhhh</th>
+	</tr>
+
+
+</table>
+
+
+
+       
+	<button onclick="location.href='./attendanceInput.html'">出欠を入力する</button>
+    </div>
+
+</body>
+</html>
