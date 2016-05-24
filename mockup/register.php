@@ -2,12 +2,7 @@
 
 session_start();
 
-try {
-$pdo = new PDO('mysql:dbname=it;host=127.0.0.1','root','');
-
-} catch (PDOException $e) {
- exit('データベース接続失敗。'.$e->getMessage());
-}
+include("db_connect.php");
 
 
 $email = $_POST["email"];
@@ -29,7 +24,7 @@ if($row[0] == NULL){
   if($email != NULL && $pw != NULL && $pw2 != NULL && $pw == $pw2){
     $sql = "insert into user (email,password) values ('$email','$pw')";
     if($pdo->query($sql)){
-      header("Location: ../mackup/infoEdit.php");
+      header("Location: ../mockup/infoEdit.php");
     }else{
       echo 'ng';
     }

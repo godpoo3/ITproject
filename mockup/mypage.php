@@ -3,6 +3,10 @@
 	include("db_connect.php");
 	include("eventcount.php");
 
+	if($_SESSION['email'] == NULL){
+		header("location: ../mockup/homepage.php");
+	}
+	
 ?>
 <!doctype html>
 <html>
@@ -45,11 +49,32 @@ echo "<li>";
 }
 ?>
         </ul>
-        <button type="botton" name="eventreset" onClick="location.href='./Eventreset.php'">イベント編集</button>
-        <button type="botton" name="eventreset" onClick="location.href='./EventRegistration.php'">イベント登録</button><br>
-        <button type="botton" name="memberEmail" onClick="location.href='./infoEdit.php'">会社情報編集</button>
-        <button type="botton" name="eventreset" onClick="location.href='./eventCheckOnly.php'">出欠表チェック</button>
+        <button type="botton" onClick="location.href='./Eventreset.php'">イベント編集</button>
+        <button type="botton" onClick="location.href='./EventRegistration.php'">イベント登録</button><br>
+        <button type="botton" onClick="location.href='./infoEdit.php'">会社情報編集</button>
+        <button type="botton" onClick="location.href='./eventCheckOnly.php'">出欠表チェック</button>
+        
     </div>
-
+    <br>
+    <?php
+    
+        if($_SESSION['name'] != NULL){
+			echo "<button type=\"botton\" onClick=\"location.href='./logout.php'\">ログアウト</button>";
+		}else{
+			echo "<button  type=\"button\" data-toggle=\"modal\" data-target=\"#myModal\"><a>ログイン</a></button>";
+			echo "<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">";
+				echo "<div class=\"modal-dialog\">";
+    				echo "<div class=\"modal-content\">";
+      					echo "<form action=\"login.php\" method=\"post\">";
+	               			echo "メールアドレス:<input type=\"text\" name=\"email\"><br>";
+        	        		echo "パスワード:<input type=\"password\" name=\"pw\"><br>";
+			   		   		echo "<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">閉じる</button>";
+				 			echo "<input type=\"submit\" name=\"button\" value=\"ログイン\" />";
+		           	    echo "</form>";
+					echo "</div>";
+				echo "</div>";
+			echo "</div>";
+		}
+    ?>
 </body>
 </html>

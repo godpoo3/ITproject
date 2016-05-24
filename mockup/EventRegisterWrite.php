@@ -2,12 +2,7 @@
 
 session_start();
 
-try {
-$pdo = new PDO('mysql:dbname=it;host=127.0.0.1','root','');
-
-} catch (PDOException $e) {
- exit('データベース接続失敗。'.$e->getMessage());
-}
+include("db_connect.php");
 
 $name = $_SESSION['name'];
 
@@ -26,7 +21,7 @@ if($eventname != NULL && $eventtime != NULL && eventplace != NULL){
   //if($eventmemo != NULL){ $eventmemo = ""; }
   $sql = "insert into event (name,eventname,eventtime,eventplace,eventmemo) values ('$name','$eventname','$eventtime','$eventplace','$eventmemo')";
   if($pdo->query($sql)){
-    header("Location: ../mackup/mypage.php");
+    header("Location: ../mockup/mypage.php");
   }else{
     echo 'ng';
   }

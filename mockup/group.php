@@ -2,12 +2,7 @@
 
 session_start();
 
-try {
-$pdo = new PDO('mysql:dbname=it;host=127.0.0.1','root','');
-
-} catch (PDOException $e) {
- exit('データベース接続失敗。'.$e->getMessage());
-}
+include("db_connect.php");
 
 $name = $_POST['name'];
 $people = $_POST['people'];
@@ -24,7 +19,7 @@ $sql = "update user set name='$name', tel='$tel', people='$people' where email =
 //var_dump($pdo->query($sql));
 
 if($pdo->query($sql)){
-  header("location: ../mackup/mypage.php");
+  header("location: ../mockup/mypage.php");
 }else{
   echo "ng";
 }

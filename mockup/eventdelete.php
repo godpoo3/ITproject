@@ -11,7 +11,7 @@ $sql = "delete from event where eventname='$eventname'";
 //var_dump($eventname);
 
   if($pdo->query($sql)){
-    header("Location: ../mackup/mypage.php");
+    header("Location: ../mockup/mypage.php");
   }else{
     echo 'ng';
   }

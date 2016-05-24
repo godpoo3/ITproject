@@ -21,7 +21,7 @@ if($eventname != NULL && $eventtime != NULL && eventplace != NULL){
   if($eventmemo == NULL){ $eventmemo = ""; }
   $sql = "update event set eventtime = '$eventtime', eventplace = '$eventplace', eventmemo = '$eventmemo' where eventname = '$eventname';";
   if($pdo->query($sql)){
-    header("Location: ../mackup/mypage.php");
+    header("Location: ../mockup/mypage.php");
   }else{
     echo 'ng';
   }

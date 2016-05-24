@@ -2,12 +2,7 @@
 
 session_start();
 
-try {
-$pdo = new PDO('mysql:dbname=it;host=127.0.0.1','root','');
-
-} catch (PDOException $e) {
- exit('データベース接続失敗。'.$e->getMessage());
-}
+include("db_connect.php");
 
 
 $email = $_POST["email"];
@@ -26,7 +21,7 @@ $_SESSION['tel'] = $row[4];
 $_SESSION['people'] = $row[5];
 
 if($email == $row[2] && $pw == $row[3]){
-	header("Location: ../mackup/mypage.php");
+	header("Location: ../mockup/mypage.php");
 }else{
 	echo "入力間違いました、もう一度入力してください。";
 }
