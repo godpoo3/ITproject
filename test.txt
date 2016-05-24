@@ -1,0 +1,6 @@
+create table to_email(
+	id int not null auto_increment,
+	user_name varchar(64) not null,
+	Toemail varchar(128) not null,
+	primary key(id)
+);
