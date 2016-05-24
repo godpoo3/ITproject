@@ -1,10 +1,12 @@
 #but1 button{
-	margin-left:50px;
+	
 	width:200px;
 	height:200px;
 	background-color:red;
 	margin-left:1500px;
-	margin-top:900px;
+	margin-top:50px;
+	filter:alpha(Opacity=30);-moz-opacity:0.7;opacity: 0.7;
+	
 	
 
 	
@@ -36,12 +38,14 @@
 
 #but2 button{
 
-	margin-left:100px;
+	
 	background-color:red;
 	height:200px;
 	width:200px;
-	margin-left:1400px;
+	margin-left:1500px;
+	margin-top:-50px;
 	position:relative;
+	filter:alpha(Opacity=30);-moz-opacity:0.7;opacity: 0.7;
 	
 	animation: animationFrames2 linear 1.5s;
   animation-iteration-count: 1;
@@ -66,10 +70,11 @@
    
 	}
 
-#all{
+body{
 	background-image:url(1.jpg);
-	height:1500px;
+	height:900px;
 	width:2000px;
+	
 	}
 	
 	a:hover
@@ -77,12 +82,16 @@
 background-color:yellow;
 text-decoration:none;
 color:blue;
+
+
+
 }
 
 a{
 	padding:60px;
 	text-decoration:none;
 	color:white;
+
 	}
 
 @keyframes animationFrames{
@@ -135,7 +144,7 @@ a{
     transform:  translate(0px,0px)  scaleX(0.00) scaleY(0.00) ;
   }
   100% {
-    transform:  translate(-650px,150px)  scaleX(1.00) scaleY(1.00) ;
+    transform:  translate(-700px,180px)  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
@@ -144,7 +153,7 @@ a{
     -moz-transform:  translate(0px,0px)  scaleX(0.00) scaleY(0.00) ;
   }
   100% {
-    -moz-transform:  translate(-650px,150px)  scaleX(1.00) scaleY(1.00) ;
+    -moz-transform:  translate(-680px,140px)  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
@@ -153,7 +162,7 @@ a{
     -webkit-transform:  translate(0px,0px)  scaleX(0.00) scaleY(0.00) ;
   }
   100% {
-    -webkit-transform:  translate(-650px,150px)  scaleX(1.00) scaleY(1.00) ;
+    -webkit-transform:  translate(-680px,140px)  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
@@ -162,7 +171,7 @@ a{
     -o-transform:  translate(0px,0px)  scaleX(0.00) scaleY(0.00) ;
   }
   100% {
-    -o-transform:  translate(-650px,150px)  scaleX(1.00) scaleY(1.00) ;
+    -o-transform:  translate(-680px,140px)  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
@@ -171,6 +180,189 @@ a{
     -ms-transform:  translate(0px,0px)  scaleX(0.00) scaleY(0.00) ;
   }
   100% {
-    -ms-transform:  translate(-650px,150px)  scaleX(1.00) scaleY(1.00) ;
+    -ms-transform:  translate(-680px,140px)  scaleX(1.00) scaleY(1.00) ;
   }
+}
+
+h1{
+	
+	margin-left:1000px;
+	margin-top:100px;
+	font-size:70px;
+	color: #fff;
+	text-shadow: 0 0 10px #fff,0 0 15px #fff;
+	
+	
+	}
+	
+.modal-content{
+	background-image:url(2.jpg);}
+p{
+		color:#36F9F6;
+		text-shadow: 0 0 10px white,0 0 15px white;
+		font-size:20px;
+	
+		}
+		
+		
+
+
+#myModal01 .inp {
+	display:block;
+	text-decoration:none;
+	margin:0px auto;
+	width:150px;
+	height:50px;
+	line-height:40px;
+	text-align:center;
+	font-family:Arial Black;
+	font-size:20px;
+	color:#FFFFFF;
+	background-color:#FFC600;
+	border-radius:5px;
+	color:#3048D7;
+	float:left;
+	filter:alpha(Opacity=20);-moz-opacity:0.9;opacity: 0.9;}
+
+#myModal01 .inp:hover {
+	animation:none;
+	-webkit-animation:none;
+}
+
+#myModal01 .inp {
+	animation: blink 1s linear infinite normal;
+	-webkit-animation: blink 1s linear infinite normal;
+	-moz-animation: blink 1s linear infinite normal;
+	-o-animation: blink 1s linear infinite normal;
+}
+
+#myModal02 .inp {
+	display:block;
+	text-decoration:none;
+	margin:0px auto;
+	width:150px;
+	height:50px;
+	line-height:40px;
+	text-align:center;
+	font-family:Arial Black;
+	font-size:20px;
+	color:#FFFFFF;
+	background-color:#FFC600;
+	border-radius:5px;
+	color:#3048D7;
+	float:left;
+	filter:alpha(Opacity=20);-moz-opacity:0.9;opacity: 0.9;
+	}
+
+#myModal02 .inp:hover {
+	animation:none;
+	-webkit-animation:none;
+}
+
+#myModal02 .inp {
+	animation: blink 1s linear infinite normal;
+	-webkit-animation: blink 1s linear infinite normal;
+	-moz-animation: blink 1s linear infinite normal;
+	-o-animation: blink 1s linear infinite normal;
+}
+
+@keyframes blink{
+	0% {background-color:#FFC600;}
+	10% {background-color:#F3F2B8;}
+	100% {background-color:#FFC600;}
+}
+@-webkit-keyframes blink{
+	0% {background-color:#FFC600;}
+	10% {background-color:#F3F2B8;}
+	100% {background-color:#FFC600;}
+}
+@-moz-keyframes blink{
+	0% {background-color:#FFC600;}
+	10% {background-color:#F3F2B8;}
+	100% {background-color:#FFC600;}
+}
+@-o-keyframes blink{
+	0% {background-color:#FFC600;}
+	10% {background-color:#F3F2B8;}
+	100% {background-color:#FFC600;}
+}
+
+#myModal01 button {
+	display:block;
+	text-decoration:none;
+	margin:0px auto;
+	width:150px;
+	height:50px;
+	line-height:10px;
+	text-align:center;
+	font-family:Arial Black;
+	font-size:20px;
+	color:#FFFFFF;
+	background-color:#3CB823;
+	border-radius:5px;
+	color:red;
+	float:right;
+	
+}
+
+#myModal01  button:hover {
+	animation:none;
+	-webkit-animation:none;
+}
+
+#myModal01  button {
+	animation: blink2 1s linear infinite normal;
+	-webkit-animation: blink2 1s linear infinite normal;
+	-moz-animation: blink2 1s linear infinite normal;
+	-o-animation: blink2 1s linear infinite normal;
+}
+
+#myModal02 button {
+	display:block;
+	text-decoration:none;
+	margin:0px auto;
+	width:150px;
+	height:50px;
+	line-height:10px;
+	text-align:center;
+	font-family:Arial Black;
+	font-size:20px;
+	color:#FFFFFF;
+	background-color:#3CB823;
+	border-radius:5px;
+	color:red;
+	float:right;
+}
+
+#myModal02  button:hover {
+	animation:none;
+	-webkit-animation:none;
+}
+
+#myModal02  button {
+	animation: blink2 1s linear infinite normal;
+	-webkit-animation: blink2 1s linear infinite normal;
+	-moz-animation: blink2 1s linear infinite normal;
+	-o-animation: blink2 1s linear infinite normal;
+}
+
+@keyframes blink2{
+	0% {background-color:#3CB823;}
+	10% {background-color:#8EFF7C;}
+	100% {background-color:#3CB823;}
+}
+@-webkit-keyframes blink2{
+	0% {background-color:#3CB823;}
+	10% {background-color:#8EFF7C;}
+	100% {background-color:#3CB823;}
+}
+@-moz-keyframes blink2{
+	0% {background-color:#3CB823;}
+	10% {background-color:#8EFF7C;}
+	100% {background-color:#3CB823;}
+}
+@-o-keyframes blink2{
+	0% {background-color:#3CB823;}
+	10% {background-color:#8EFF7C;}
+	100% {background-color:#3CB823;}
 }
